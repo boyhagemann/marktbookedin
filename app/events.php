@@ -4,6 +4,20 @@ use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 
 Event::listen('api.advertisement.index', function(QueryBuilder $qb) {
 
+    if(!Input::get('type')) {
+        return;
+    }
+
+    // White list type of advertisement
+    if(!in_array(Input::get('type'), [Advertisement::TYPE_SUPPLY, Advertisement::TYPE_DEMAND])) {
+        return;
+    }
+
+    $qb->where('type', Input::get('type'));
+});
+
+Event::listen('api.advertisement.index', function(QueryBuilder $qb) {
+
     if(!Input::get('q')) {
         return;
     }

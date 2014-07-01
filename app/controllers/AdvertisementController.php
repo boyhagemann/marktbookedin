@@ -13,6 +13,27 @@ class AdvertisementController extends \BaseController {
         return View::make('advertisements/index', compact('advertisements'));
 	}
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function supply()
+    {
+        $advertisements = API::get('api/advertisements', ['type' => 'supply']);
+        return View::make('advertisements.supply', compact('advertisements'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function demand()
+    {
+        $advertisements = API::get('api/advertisements', ['type' => 'demand']);
+        return View::make('advertisements.demand', compact('advertisements'));
+    }
 
 	/**
 	 * Show the form for creating a new resource.

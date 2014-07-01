@@ -4,10 +4,22 @@
         @include('partials.navbar')
         @include('partials.search')
 
-        <h3>{{ Lang::get('home.advertisements.title') }}</h3>
-        @include('advertisements.list')
+        <div class="grid">
 
-        <a href="{{ URL::route('advertisements.index') }}">{{ Lang::get('home.advertisements.link') }}</a>
+            <section class="grid__item">
+                <h3>{{ Lang::get('home.supply.title') }}</h3>
+                @include('advertisements.list', ['advertisements' => $supply])
+                <a href="{{ URL::route('advertisements.supply') }}">{{ Lang::get('home.supply.link') }}</a>
+            </section><!--
+
+         --><section class="grid__item">
+                <h3>{{ Lang::get('home.demand.title') }}</h3>
+                @include('advertisements.list', ['advertisements' => $demand])
+                <a href="{{ URL::route('advertisements.demand') }}">{{ Lang::get('home.demand.link') }}</a>
+            </section>
+
+        </div>
+
 
     </body>
 </html>

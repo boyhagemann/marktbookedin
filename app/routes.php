@@ -15,8 +15,9 @@ App::setLocale('nl');
 
 Route::get('/', function()
 {
-    $advertisements = API::get('api/advertisements');
-	return View::make('layouts.home', compact('advertisements'));
+    $supply = API::get('api/advertisements', ['type' => 'supply']);
+    $demand = API::get('api/advertisements', ['type' => 'demand']);
+	return View::make('layouts.home', compact('supply', 'demand'));
 });
 
 Route::get('/logout', ['as' => 'auth.logout', function()
@@ -52,12 +53,23 @@ Route::bind(Lang::get('routes.advertisements'), function($slug) {
     return Advertisement::where('slug', $slug)->firstOrFail();
 });
 
+Route::get(Lang::get('routes.supply'), [
+    'as'    => 'advertisements.supply',
+    'uses'  => 'AdvertisementController@supply',
+]);
+
+Route::get(Lang::get('routes.demand'), [
+    'as'    => 'advertisements.demand',
+    'uses'  => 'AdvertisementController@demand',
+]);
+
 Route::resource(Lang::get('routes.advertisements'), 'AdvertisementController', [
     'names'    => [
         'index' => 'advertisements.index',
         'show' => 'advertisements.show',
     ],
 ]);
+
 
 Route::group(['prefix' => 'api', 'namespace' => 'Api'], function() {
 

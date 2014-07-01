@@ -1,7 +1,8 @@
 
 <nav>
     <a href="{{ URL::to('/') }}">{{ Lang::get('navigation.home') }}</a>
-    <a href="{{ URL::route('advertisements.index') }}">{{ Lang::get('navigation.advertisements') }}</a>
+    <a href="{{ URL::route('advertisements.supply') }}">{{ Lang::get('navigation.supply') }}</a>
+    <a href="{{ URL::route('advertisements.demand') }}">{{ Lang::get('navigation.demand') }}</a>
 </nav>
 
 <nav>

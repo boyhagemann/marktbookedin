@@ -27,14 +27,14 @@ class AdvertisementTableSeeder extends Seeder {
             'title' => 'Een eerste vraag',
             'body' => 'Wie heeft er hier een opdracht voor mij?',
             'user_id' => 1,
-            'type' => 'demand',
+            'type' => Advertisement::TYPE_DEMAND,
         ]);
 
         Advertisement::create([
             'title' => 'Een eerste aanbod',
             'body' => 'Dit is een aanbod',
             'user_id' => 1,
-            'type' => 'supply',
+            'type' => Advertisement::TYPE_SUPPLY,
         ]);
 	}
 

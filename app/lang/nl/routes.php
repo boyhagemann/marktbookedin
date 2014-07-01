@@ -2,6 +2,7 @@
 
 return array(
 
-    'advertisements' => 'advertenties',
-
+    'advertisements'    => 'advertenties',
+    'supply'            => 'advertenties/aanbod',
+    'demand'            => 'advertenties/vraag',
 );
