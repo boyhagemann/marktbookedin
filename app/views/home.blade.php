@@ -7,5 +7,5 @@ Welkom {{ Auth::user()->name }}
 <a href="{{ URL::route('auth.social', ['strategy' => 'linkedin'])  }}">LinkedIn</a>
 @endif
 
-<h3>Advertisements</h3>
+<h3>{{ Lang::get('home.advertisements.title') }}</h3>
 @include('advertisements.list')

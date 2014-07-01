@@ -48,11 +48,16 @@ Route::any('auth/social/{strategy}/{action?}', ['as' => 'auth.social', function 
 }])->where(['strategy' => '.*']);
 
 
-Route::bind('advertisements', function($slug) {
+Route::bind(Lang::get('routes.advertisements'), function($slug) {
     return Advertisement::where('slug', $slug)->firstOrFail();
 });
 
-Route::resource('advertisements', 'AdvertisementController');
+Route::resource(Lang::get('routes.advertisements'), 'AdvertisementController', [
+    'names'    => [
+        'index' => 'advertisements.index',
+        'show' => 'advertisements.show',
+    ],
+]);
 
 Route::group(['prefix' => 'api', 'namespace' => 'Api'], function() {
 

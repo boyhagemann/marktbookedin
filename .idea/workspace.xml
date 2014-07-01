@@ -25,7 +25,7 @@
       <file leaf-file-name="list.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/advertisements/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="58" selection-start="140" selection-end="140" vertical-scroll-proportion="-2.8965516" vertical-offset="0" max-vertical-offset="280">
+            <state line="3" column="41" selection-start="109" selection-end="123" vertical-scroll-proportion="-2.8965516" vertical-offset="0" max-vertical-offset="280">
               <folding />
             </state>
           </provider>
@@ -34,7 +34,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.05925926" vertical-offset="0" max-vertical-offset="945">
+            <state line="2" column="6" selection-start="38" selection-end="38" vertical-scroll-proportion="0.05925926" vertical-offset="0" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
@@ -49,10 +49,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="43" selection-start="249" selection-end="249" vertical-scroll-proportion="-8.689655" vertical-offset="0" max-vertical-offset="448">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="62" selection-start="1391" selection-end="1391" vertical-scroll-proportion="-18.0" vertical-offset="654" max-vertical-offset="1680">
+            <state line="50" column="46" selection-start="1327" selection-end="1327" vertical-scroll-proportion="-14.103448" vertical-offset="739" max-vertical-offset="1820">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="advertisements.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lang/nl/advertisements.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="-2.8965516" vertical-offset="0" max-vertical-offset="532">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lang/nl/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="42" selection-start="88" selection-end="88" vertical-scroll-proportion="-5.793103" vertical-offset="0" max-vertical-offset="448">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lang/nl/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="35" selection-end="35" vertical-scroll-proportion="-3.862069" vertical-offset="0" max-vertical-offset="364">
               <folding />
             </state>
           </provider>
@@ -84,16 +120,18 @@
         <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/AdvertisementTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/lang/nl/advertisements.php" />
         <option value="$PROJECT_DIR$/app/views/advertisements/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/views/advertisements/show.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/AdvertisementController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/models/Advertisement.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/advertisements/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/lang/nl/routes.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/lang/nl/advertisements.php" />
+        <option value="$PROJECT_DIR$/app/lang/nl/home.php" />
+        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -177,7 +215,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marktbookedin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marktbookedin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marktbookedin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marktbookedin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marktbookedin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="marktbookedin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="en" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,11 +313,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\homestead\projects\marktbookedin\app\views\advertisements" />
-      <recent name="C:\homestead\projects\marktbookedin\app\lang\en" />
       <recent name="C:\homestead\projects\marktbookedin\app\lang\nl" />
       <recent name="C:\homestead\projects\marktbookedin\app\lang" />
+      <recent name="C:\homestead\projects\marktbookedin\app\views\advertisements" />
+      <recent name="C:\homestead\projects\marktbookedin\app\lang\en" />
       <recent name="C:\homestead\projects\marktbookedin\app\database\seeds" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\homestead\projects\marktbookedin\app\lang\nl" />
     </key>
   </component>
   <component name="RunManager">
@@ -464,23 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="261" selection-end="261" vertical-scroll-proportion="-9.655172" vertical-offset="0" max-vertical-offset="448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="140" column="21" selection-start="5001" selection-end="5001" vertical-scroll-proportion="-25.103449" vertical-offset="3192" max-vertical-offset="5684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lang/nl/advertisements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.38682252" vertical-offset="0" max-vertical-offset="941">
           <folding />
         </state>
       </provider>
@@ -522,23 +611,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="62" selection-start="1391" selection-end="1391" vertical-scroll-proportion="-18.0" vertical-offset="654" max-vertical-offset="1680">
+        <state line="4" column="13" selection-start="35" selection-end="35" vertical-scroll-proportion="-3.862069" vertical-offset="0" max-vertical-offset="364">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advertisements/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="140" selection-end="140" vertical-scroll-proportion="-2.8965516" vertical-offset="0" max-vertical-offset="280">
+        <state line="3" column="41" selection-start="109" selection-end="123" vertical-scroll-proportion="-2.8965516" vertical-offset="0" max-vertical-offset="280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="46" selection-start="1327" selection-end="1327" vertical-scroll-proportion="-14.103448" vertical-offset="739" max-vertical-offset="1820">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/advertisements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="-2.8965516" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lang/nl/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="42" selection-start="88" selection-end="88" vertical-scroll-proportion="-5.793103" vertical-offset="0" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="43" selection-start="249" selection-end="249" vertical-scroll-proportion="-8.689655" vertical-offset="0" max-vertical-offset="448">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.05925926" vertical-offset="0" max-vertical-offset="945">
+        <state line="2" column="6" selection-start="38" selection-end="38" vertical-scroll-proportion="0.05925926" vertical-offset="0" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
