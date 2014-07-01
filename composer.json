@@ -6,7 +6,11 @@
 	"require": {
 		"laravel/framework": "4.2.*",
         "socialism/laravel-opauth": "0.1.*",
-        "opauth/linkedin": "0.2.*"
+        "opauth/linkedin": "0.2.*",
+        "barryvdh/laravel-ide-helper": "1.*",
+        "teepluss/api": "1.*",
+        "elasticsearch/elasticsearch": "~1.0",
+        "cviebrock/eloquent-sluggable": "2.*"
 	},
 	"autoload": {
 		"classmap": [

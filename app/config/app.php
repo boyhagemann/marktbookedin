@@ -122,6 +122,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Socialism\LaravelOpauth\LaravelOpauthServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Teepluss\Api\ApiServiceProvider',
+        'Cviebrock\EloquentSluggable\SluggableServiceProvider',
 	),
 
 	/*

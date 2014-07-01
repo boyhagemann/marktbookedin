@@ -11,9 +11,12 @@
 |
 */
 
+App::setLocale('nl');
+
 Route::get('/', function()
 {
-	return View::make('home');
+    $advertisements = API::get('api/advertisements');
+	return View::make('home', compact('advertisements'));
 });
 
 Route::get('/logout', ['as' => 'auth.logout', function()
@@ -43,3 +46,19 @@ Route::any('auth/social/{strategy}/{action?}', ['as' => 'auth.social', function 
     app('opauth')->run();
 
 }])->where(['strategy' => '.*']);
+
+
+Route::bind('advertisements', function($slug) {
+    return Advertisement::where('slug', $slug)->firstOrFail();
+});
+
+Route::resource('advertisements', 'AdvertisementController');
+
+Route::group(['prefix' => 'api', 'namespace' => 'Api'], function() {
+
+    Route::get('advertisements', function() {
+        return 'test';
+    });
+    Route::resource('advertisements', 'AdvertisementController');
+
+});
