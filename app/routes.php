@@ -30,7 +30,7 @@ Route::any('auth/social/{strategy}/{action?}', ['as' => 'auth.social', function 
         $info = $response['auth']['info'];
 
         User::unguard();
-        $user = User::firstOrCreate(['email' => $info['email']]);
+        $user = User::firstOrNew(['email' => $info['email']]);
         $user->first_name = $info['first_name'];
         $user->last_name = $info['last_name'];
         $user->save();
@@ -38,11 +38,8 @@ Route::any('auth/social/{strategy}/{action?}', ['as' => 'auth.social', function 
         Auth::login($user);
 
         return Redirect::to('/');
-
-
-        dd($response);
     }
-    app('opauth')->run();
 
+    app('opauth')->run();
 
 }])->where(['strategy' => '.*']);
