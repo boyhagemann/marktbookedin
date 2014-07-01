@@ -1,0 +1,66 @@
+
+
+
+/*------------------------------------*\
+    $OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+$use-grids:         true;
+$use-flexbox:       false;
+$use-columns:       false;
+$use-nav:           true;
+$use-options:       false;
+$use-pagination:    false;
+$use-breadcrumb:    false;
+$use-media:         false;
+$use-marginalia:    false;
+$use-island:        true;
+$use-block-list:    false;
+$use-matrix:        false;
+$use-split:         false;
+$use-this-or-this:  false;
+$use-link-complex:  false;
+$use-flyout:        false;
+$use-arrows:        false;
+$use-sprite:        false;
+$use-icon-text:     false;
+$use-beautons:      true;
+$use-lozenges:      false;
+$use-rules:         true;
+$use-stats:         false;
+$use-greybox:       true;
+
+
+
+@import 'bower_components/inuitcss/defaults';
+@import 'bower_components/inuitcss/inuit';
+
+
+
+$color-light:         #fff;
+$color-light-soft:    #ddd;
+$color-grey-hard:     #555;
+
+.container {
+  max-width: $desk-wide-start;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar {
+  background: $color-grey-hard;
+}
+.navbar__nav {
+  margin: 0;
+}
+
+.navbar__link {
+  color: $color-light-soft;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-light;
+  }
+}

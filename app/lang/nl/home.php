@@ -2,10 +2,16 @@
 
 return array(
 
-	'advertisements' => [
+	'supply' => [
 
-        'title' => 'Laatste advertenties',
-        'link' => 'Alle advertenties',
+        'title' => 'Aanbod',
+        'link' => 'Bekijk al het aanbod',
+    ],
+
+    'demand' => [
+
+        'title' => 'Vraag',
+        'link' => 'Bekijk alle vragen',
     ],
 
 );
