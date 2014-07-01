@@ -9,7 +9,7 @@ class AdvertisementController extends \BaseController {
 	 */
 	public function index()
 	{
-		$advertisements = API::get('api/advertisements');
+		$advertisements = API::get('api/advertisements', Input::all());
         return View::make('advertisements/index', compact('advertisements'));
 	}
 

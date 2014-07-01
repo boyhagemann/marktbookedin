@@ -16,7 +16,7 @@ App::setLocale('nl');
 Route::get('/', function()
 {
     $advertisements = API::get('api/advertisements');
-	return View::make('home', compact('advertisements'));
+	return View::make('layouts.home', compact('advertisements'));
 });
 
 Route::get('/logout', ['as' => 'auth.logout', function()

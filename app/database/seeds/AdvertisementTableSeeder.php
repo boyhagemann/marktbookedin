@@ -11,6 +11,13 @@ class AdvertisementTableSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
+        DB::table('advertisements')->delete();
+
+        $client = new Elasticsearch\Client();
+        $client->indices()->delete([
+            'index' => 'marktbookedin',
+        ]);
+
         Advertisement::create([
             'title' => 'Een eerste vraag',
             'body' => 'Wie heeft er hier een opdracht voor mij?',

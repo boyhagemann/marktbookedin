@@ -1,6 +1,6 @@
 <?php namespace Api;
 
-use Advertisement;
+use Advertisement, Event, Input;
 
 class AdvertisementController extends \BaseController {
 
@@ -11,7 +11,11 @@ class AdvertisementController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Advertisement::all();
+        $q = Advertisement::query();
+
+        Event::fire('api.advertisement.index', array($q));
+
+        return $q->paginate(Input::get('limit') ?: 10)->appends(Input::except('page'));
 	}
 
 
