@@ -13,10 +13,15 @@ class AdvertisementTableSeeder extends Seeder {
 
         DB::table('advertisements')->delete();
 
-        $client = new Elasticsearch\Client();
-        $client->indices()->delete([
-            'index' => 'marktbookedin',
-        ]);
+        try {
+            $client = new Elasticsearch\Client();
+            $client->indices()->delete([
+                'index' => 'marktbookedin',
+            ]);
+        }
+        catch(Exception $e) {
+
+        }
 
         Advertisement::create([
             'title' => 'Een eerste vraag',
