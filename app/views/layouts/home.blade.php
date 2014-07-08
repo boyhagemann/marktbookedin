@@ -18,13 +18,13 @@
                 <section class="grid__item desk-one-third">
                     <h3>{{ Lang::get('home.supply.title') }}</h3>
                     @include('advertisements.list', ['advertisements' => $supply])
-                    <a href="{{ URL::route('advertisements.supply') }}">{{ Lang::get('home.supply.link') }}</a>
+                    <a href="{{ URL::route('advertisements.supply') }}" class="btn btn--gamma btn--hard btn--small btn--positive">{{ Lang::get('home.supply.link') }}</a>
                 </section><!--
 
              --><section class="grid__item desk-one-third">
                     <h3>{{ Lang::get('home.demand.title') }}</h3>
                     @include('advertisements.list', ['advertisements' => $demand])
-                    <a href="{{ URL::route('advertisements.demand') }}">{{ Lang::get('home.demand.link') }}</a>
+                    <a href="{{ URL::route('advertisements.demand') }}" class="btn btn--gamma btn--hard btn--small btn--positive">{{ Lang::get('home.demand.link') }}</a>
                 </section>
 
             </div>

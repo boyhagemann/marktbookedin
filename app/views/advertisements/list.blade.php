@@ -1,11 +1,11 @@
 @foreach($advertisements as $advertisement)
-<article>
-    <div class="">
+<article class="grid">
+    <div class="grid__item one-quarter">
         @if($advertisement->user->image)
         <img src="{{ $advertisement->user->image }}">
         @endif
-    </div>
-    <div class="">
+    </div><!--
+ --><div class="grid__item three-quarters">
 
         <header>
             <h3><a href="{{ $advertisement->url }}">{{ $advertisement->title }}</a></h3>

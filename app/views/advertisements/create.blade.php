@@ -21,7 +21,7 @@
     {{ $errors->first('body', '<p>:message</p>') }}
 </div>
 <div>
-    {{ Form::submit(Lang::get('advertisements.form.create.submit.label')) }}
+    {{ Form::submit(Lang::get('advertisements.form.create.submit.label'), ['class' => 'btn btn--gamma btn--positive']) }}
 </div>
 {{ Form::close() }}
 @stop
