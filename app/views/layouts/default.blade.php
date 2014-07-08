@@ -12,6 +12,7 @@
 
         @include('partials.navbar')
         @include('partials.search')
+        @include('partials.messages')
 
         @yield('content')
 

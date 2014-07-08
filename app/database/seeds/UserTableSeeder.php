@@ -13,8 +13,9 @@ class UserTableSeeder extends Seeder {
 
         User::create([
             'email' => 'test@test.nl',
-            'first_name' => 'Test',
-            'last_name' => 'Test',
+            'first_name' => 'Boy',
+            'last_name' => 'Hagemann',
+            'image' => 'http://m.c.lnkd.licdn.com/mpr/mprx/0_gyqUotBXm23hfUEL0ZQkorFwuaqfSgsLx4hXorQnPIhOtJS5AsXBkK-ZC8NAasUdyx95LBqOHX77',
         ]);
 	}
 

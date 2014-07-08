@@ -42,7 +42,7 @@ class AdvertisementController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+        return View::make('advertisements.create');
 	}
 
 
@@ -53,7 +53,23 @@ class AdvertisementController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        $v = Validator::make(Input::all(), [
+            'type' => 'required',
+            'title' => 'required',
+            'body' => 'required',
+        ]);
+
+        if($v->fails()) {
+            return Redirect::route('advertisements.create')->withErrors($v->errors())->withInput();
+        }
+
+        $advertisement = new Advertisement();
+        $advertisement->fill(Input::all());
+        $advertisement->user_id = Auth::getUser()->id;
+        $advertisement->save();
+
+        $message = Lang::get('advertisements.create.message.success');
+        return Redirect::route('advertisements.show', $advertisement->slug)->withSuccess($message);
 	}
 
 

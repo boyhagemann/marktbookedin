@@ -37,6 +37,7 @@ Route::any('auth/social/{strategy}/{action?}', ['as' => 'auth.social', function 
         $user = User::firstOrNew(['email' => $info['email']]);
         $user->first_name = $info['first_name'];
         $user->last_name = $info['last_name'];
+        $user->image = $info['image'];
         $user->save();
 
         Auth::login($user);
@@ -63,12 +64,21 @@ Route::get(Lang::get('routes.demand'), [
     'uses'  => 'AdvertisementController@demand',
 ]);
 
-Route::resource(Lang::get('routes.advertisements'), 'AdvertisementController', [
-    'names'    => [
-        'index' => 'advertisements.index',
-        'show' => 'advertisements.show',
-    ],
-]);
+Route::group(['before' => 'auth'], function() {
+
+    Route::resource(Lang::get('routes.advertisements'), 'AdvertisementController', [
+        'names'    => [
+            'index' => 'advertisements.index',
+            'show' => 'advertisements.show',
+            'create' => 'advertisements.create',
+            'store' => 'advertisements.store',
+            'edit' => 'advertisements.edit',
+            'update' => 'advertisements.update',
+            'destroy' => 'advertisements.destroy',
+        ],
+    ]);
+
+});
 
 
 Route::group(['prefix' => 'api', 'namespace' => 'Api'], function() {

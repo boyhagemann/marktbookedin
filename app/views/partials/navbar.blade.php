@@ -4,6 +4,9 @@
         <li><a href="{{ URL::to('/') }}">{{ Lang::get('navigation.home') }}</a></li>
         <li><a href="{{ URL::route('advertisements.supply') }}">{{ Lang::get('navigation.supply') }}</a></li>
         <li><a href="{{ URL::route('advertisements.demand') }}">{{ Lang::get('navigation.demand') }}</a></li>
+        @if(Auth::check())
+        <li><a href="{{ URL::route('advertisements.create') }}">{{ Lang::get('navigation.advertisement') }}</a></li>
+        @endif
 </nav>
 
 <nav>

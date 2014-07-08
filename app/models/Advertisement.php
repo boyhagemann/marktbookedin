@@ -7,6 +7,7 @@ use Cviebrock\EloquentSluggable\SluggableTrait;
  * Class Advertisement
  *
  * @property Comment[] $comments
+ * @property User $user
  */
 class Advertisement extends Eloquent implements SluggableInterface
 {
@@ -47,6 +48,11 @@ class Advertisement extends Eloquent implements SluggableInterface
     public function comments()
     {
         return $this->morphMany('Comment', 'commentable');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('User');
     }
 
 }

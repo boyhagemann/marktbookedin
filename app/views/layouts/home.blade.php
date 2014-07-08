@@ -11,6 +11,7 @@
         <div class="container">
             @include('partials.navbar')
             @include('partials.search')
+            @include('partials.messages')
 
             <div class="grid">
 

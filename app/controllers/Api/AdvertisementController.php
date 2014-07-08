@@ -12,6 +12,7 @@ class AdvertisementController extends \BaseController {
 	public function index()
 	{
         $q = Advertisement::query();
+        $q->orderBy('created_at', 'DESC');
 
         Event::fire('api.advertisement.index', array($q));
 

@@ -3,8 +3,8 @@
 return [
 
     'home' => 'Home',
-    'advertisements' => 'Advertenties',
     'supply' => 'Aanbod',
     'demand' => 'Vraag',
+    'advertisement' => 'Plaats een advertentie',
 
 ];
