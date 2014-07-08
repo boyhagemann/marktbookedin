@@ -1,13 +1,13 @@
-@foreach($advertisements as $ad)
+@foreach($advertisements as $advertisement)
 <article>
     <header>
-        <h3><a href="{{ $ad->url }}">{{ $ad->title }}</a></h3>
+        <h3><a href="{{ $advertisement->url }}">{{ $advertisement->title }}</a></h3>
     </header>
-    <p>{{ $ad->body }}</p>
+    <p>{{ $advertisement->body }}</p>
 
     <footer>
-        @if($ad->comments->count())
-        <a href="{{ $ad->url }}">{{ $ad->comments->count() }} comments</a>
+        @if($advertisement->comments->count())
+        <a href="{{ $advertisement->url }}">{{ Lang::choice('comments.list.link',  $advertisement->comments->count()) }}</a>
         @endif
     </footer>
 </article>
