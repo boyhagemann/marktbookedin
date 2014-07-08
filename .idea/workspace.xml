@@ -69,10 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="list.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/advertisements/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="313" selection-end="313" vertical-scroll-proportion="0.32731137" vertical-offset="0" max-vertical-offset="941">
+            <state line="14" column="11" selection-start="337" selection-end="337" vertical-scroll-proportion="-13.5172415" vertical-offset="0" max-vertical-offset="560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvertisementTableSeeder.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/AdvertisementTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="21" selection-start="716" selection-end="716" vertical-scroll-proportion="0.5834219" vertical-offset="403" max-vertical-offset="1372">
               <folding />
             </state>
           </provider>
@@ -108,7 +117,6 @@
         <option value="$PROJECT_DIR$/app/views/partials/search.blade.php" />
         <option value="$PROJECT_DIR$/app/views/advertisements/index.blade.php" />
         <option value="$PROJECT_DIR$/app/lang/nl/search.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/AdvertisementTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/events.php" />
         <option value="$PROJECT_DIR$/app/controllers/Api/AdvertisementController.php" />
         <option value="$PROJECT_DIR$/app/lang/nl/routes.php" />
@@ -132,6 +140,7 @@
         <option value="$PROJECT_DIR$/app/models/Advertisement.php" />
         <option value="$PROJECT_DIR$/app/models/Comment.php" />
         <option value="$PROJECT_DIR$/app/views/advertisements/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/AdvertisementTableSeeder.php" />
       </list>
     </option>
   </component>
@@ -247,7 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,11 +274,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="advertisements" />
+              <option name="myItemId" value="seeds" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/AdvertisementTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="48" selection-start="857" selection-end="857" vertical-scroll-proportion="0.79277366" vertical-offset="262" max-vertical-offset="1316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advertisements/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="80" selection-start="151" selection-end="151" vertical-scroll-proportion="0.1487779" vertical-offset="0" max-vertical-offset="941">
@@ -667,7 +669,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advertisements/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="313" selection-end="313" vertical-scroll-proportion="0.32731137" vertical-offset="0" max-vertical-offset="941">
+        <state line="14" column="11" selection-start="337" selection-end="337" vertical-scroll-proportion="-13.5172415" vertical-offset="0" max-vertical-offset="560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/AdvertisementTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="21" selection-start="716" selection-end="716" vertical-scroll-proportion="0.5834219" vertical-offset="403" max-vertical-offset="1372">
           <folding />
         </state>
       </provider>
