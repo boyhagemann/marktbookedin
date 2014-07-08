@@ -3,6 +3,11 @@
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
 
+/**
+ * Class Advertisement
+ *
+ * @property Comment[] $comments
+ */
 class Advertisement extends Eloquent implements SluggableInterface
 {
     const TYPE_SUPPLY = 'supply';
@@ -27,7 +32,9 @@ class Advertisement extends Eloquent implements SluggableInterface
      *
      * @var array
      */
-    protected $fillable = array('title', 'body', 'user_id');
+    protected $fillable = ['title', 'body', 'user_id'];
+
+    protected $with = ['Comments'];
 
     /**
      * @return string
@@ -35,6 +42,11 @@ class Advertisement extends Eloquent implements SluggableInterface
     public function getUrlAttribute()
     {
         return URL::route('advertisements.show', $this->slug);
+    }
+
+    public function comments()
+    {
+        return $this->morphMany('Comment', 'commentable');
     }
 
 }
